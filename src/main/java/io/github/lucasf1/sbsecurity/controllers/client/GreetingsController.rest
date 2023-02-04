@@ -1,0 +1,11 @@
+@baseUrl = http://localhost:8080/api/v1/greetings
+@token = eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsdWNhcy5mYXJpYXNAbWFpbC5jb20iLCJleHAiOjE2NzU1NDY1MjAsImlhdCI6MTY3NTUxMDUyMH0.oB7y2O02VdRZXes9MWOxmP7O0UrV7hUCtGcFnUCPyFM
+
+###
+get {{baseUrl}}
+Authorization: Bearer {{token}}
+#Authorization: Basic user:4fea8a9d-c454-4cc2-9986-a5a0e32b81b4
+
+###
+get {{baseUrl}}/say-good-bye
+Authorization: Bearer {{token}}
